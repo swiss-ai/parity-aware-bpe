@@ -10,7 +10,7 @@
 Parity-Aware Byte-Pair Encoding: Improving Cross-lingual Fairness in Tokenization
 ================================== 
 This repository provides an implementation of the **Parity-Aware BPE** algorithm.
-Paper: ["Parity-Aware Byte-Pair Encoding: Improving Cross-lingual Fairness in Tokenization"](https://arxiv.org/abs/2508.04796) [arXiv 2025]
+Paper: ["Parity-Aware Byte-Pair Encoding: Improving Cross-lingual Fairness in Tokenization"](https://arxiv.org/abs/2508.04796) [ACL 2026]
 
 
 Overview
