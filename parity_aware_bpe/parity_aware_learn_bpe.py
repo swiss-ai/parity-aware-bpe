@@ -183,7 +183,7 @@ def get_vocabulary(fobj, is_dict=False, num_workers=1):
         pool.join()
         import pickle
         for i in range(num_workers):
-            with open(vocab_files[i].name, 'r') as f:
+            with open(vocab_files[i].name, 'rb') as f:
                 vocab += pickle.load(f)
             os.remove(vocab_files[i].name)
     else:
@@ -206,7 +206,7 @@ def _get_vocabulary(infile, outfile, begin, end):
                 if word:
                     vocab[word] += 1
             line = f.readline()
-    with open(outfile, 'w') as f:
+    with open(outfile, 'wb') as f:
         pickle.dump(vocab, f)
 
 def pre_merge(vocab, bpe_codes):
